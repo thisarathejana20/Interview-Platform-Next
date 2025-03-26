@@ -3,7 +3,7 @@
 import { vapi } from "@/lib/vapi.sdk";
 import { cn } from "@/utils";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 enum CallStatus {
