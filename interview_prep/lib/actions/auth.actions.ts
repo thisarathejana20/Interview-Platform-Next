@@ -94,7 +94,7 @@ export async function getCurrentUser(): Promise<User | null> {
     if (!userRecord.exists) {
       return null;
     }
-    return { uid: userRecord.uid, ...userRecord.data() } as User;
+    return { id: userRecord.id, ...userRecord.data() } as User;
   } catch (error) {
     console.log("Error in get current user ", error);
     return null;
